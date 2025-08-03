@@ -2,12 +2,13 @@
 import React from 'react'
 import logo from '../assets/logo.webp'
 import { px } from 'framer-motion'
+import ColorModeSwitch from '@/ColorModeSwitch'
 const NavBar = () => {
   return (
     //horizontal stack
-    <HStack> 
+    <HStack justifyContent='space-between' padding = '10px'> 
         <Image src={logo} boxSize='60px'></Image>
-        <Text>NavBar</Text>
+        <ColorModeSwitch></ColorModeSwitch>
     </HStack>
 )
 }
