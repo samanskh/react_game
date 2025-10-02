@@ -11,7 +11,7 @@ interface props
 }
 const GameCard = ({game}:props) => {
   return (
-    <Card.Root width="320px" borderRadius={10} overflow={'hidden'}>
+    <Card.Root>
         <Image src={getCroppedImageUrl(game.background_image)} />
         <Card.Body gap={2}>
             <Heading font="2xl">{game.name}</Heading>
